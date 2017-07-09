@@ -21,6 +21,8 @@ array = [0 for x in range(size)]
 
 def signal_handler(signal, frame):
     print('You pressed Ctrl+C!')
+    array[size - 1] = last_image
+    array = [1] + array
     print(array)
     sys.exit(0)
 
@@ -38,6 +40,8 @@ startTime = time.time()
 
 i = 0
 signal.signal(signal.SIGINT, signal_handler)
+first_image = 1
+last_image =1
 
 while True:
     if (time.time() - startTime > 1):
@@ -50,6 +54,8 @@ while True:
         else:
             place_found = False
             place = None
+            global last_image
+            last_image = image_counter
             array.sort()
             first_elem = array[0]
             for k in range(size):
