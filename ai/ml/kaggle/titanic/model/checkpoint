@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/ubuntu/parag/interesting_questions/ai/ml/kaggle/titanic/model/titanic-model.tfl"
+all_model_checkpoint_paths: "/home/ubuntu/parag/interesting_questions/ai/ml/kaggle/titanic/model/titanic-model.tfl"
