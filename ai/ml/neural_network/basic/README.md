@@ -1,4 +1,4 @@
-#1
+# 1
   
 a simple implementation of deep nureal network for creating and categorize A dataset consist of 0 and 1   
 you can play arround with elem_size i.e. size of elem in dataset ex:- 5 then elem [0,1,1,1,1]   
